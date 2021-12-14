@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@500&display=swap');
+
+body{
+    margin: 0px;
+    background-color: rgb(199, 199, 199);
+}
+
+    /* HEADER */
+
+        header{
+            background-image: url("img/Fondo Header.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 100%;
+        }
+
+        header img{
+            width: 10%;
+            height: 100%;
+            position: relative;
+            left: 1%;
+            top: 1em;
+        }
+
+        #menu{
+            display: none;
+        }
+
+        #btn-menu{
+            display: none;
+        }
+
+        header label{
+            display: block;
+            position: relative;
+            bottom: 9vh;
+            left: 93%;
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+        }
+
+        header label:hover{
+            cursor: pointer;
+            background-color: turquoise;
+        }
+
+        header label img{
+            width: 80%;
+        }
+
+        .menu{
+            position: absolute;
+            background-color: tomato;
+            width: 30%;
+            display: none;
+            border-bottom-left-radius: 75px;
+        }
+
+        .menu ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .menu li{
+            border-top: 1px solid #fff;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu a.dropdown-arrow:after {
+            content: "\25BE";
+            margin-left: 5px;
+        }
+
+        #btn-menu:checked~.menu{
+            margin-left:70%;
+            transition: all 0.3s;
+            display: block;
+        }
+
+    /*SECTION - ACCESOS DIRECTOS*/
+
+        #accesos_directos{
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        #accesos_directos article{
+            background-color: #704E2E;
+        }
+        #accesos_directos h1{
+            background-color: white;
+            text-align: center;
+        }
+
+        #accesos_directos article h1{
+            padding: 5px;
+            margin: 0px;
+            border-bottom: solid 1px black;
+        }
+
+        #accesos_directos p{
+            padding: 10px;
+            margin: 0px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+        }
+
+        input{
+            background-color: rgb(255, 255, 255);
+            color:black;
+            border: 0px;
+            border-radius: 25px;
+            width: 50%;
+            padding: 5%;
+            margin: 5% 25%;
+            box-shadow: 0px 0px 25px 3px rgba(255, 110, 110, 0.5);
+            box-shadow: 5px 5px 5px 2px rgba(255, 143, 190, 0.6);
+            font-family: 'Murecho', sans-serif;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        #CTA{
+            background-color: red;
+        }
+
+        p>a{
+            color: white;
+            text-decoration: none;
+        }
+
+    /*SECTION - ARTICULOS PRINCIPALES*/
+
+        #articulos_principales{
+            width: 90%;
+            height: 100%;
+            margin: 0px auto;
+
+        }
+
+        #articulos_principales article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            margin: 2.5% 0px;
+        }
+
+        #articulos_principales article>div{
+            border: solid 3px black;
+            width: 77%;
+        }
+
+        #articulos_principales img{
+            border: solid 3px black;
+            width: 20%;
+            height: 20%;
+        }
+
+    /*FOOTER*/
+
+        footer{
+            background-color: #004706;
+            color: #CFCB5D;
+        }
+
+        footer>div{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            width: 90%;
+        }
+
+        footer p{
+            margin: auto 0px;
+            width: 50%;
+        }
+
+        #direccion{
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer div div:last-child{
+            display: none;
+        }
+
+        .redes_sociales{
+            width: 70%;
+            height: 70%;
+            margin: 5px;
+        }
+
+        footer a{
+            color: #CFCB5D;
+            margin: auto 0px;
+            width: 20%;
+        }
+
+        #telefono{
+            text-align: center;
+        }
+
+@media screen and (max-width: 400px){
+
+    /*SECTION - ACCESOS DIRECTOS*/
+
+    #accesos_directos div{
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    #accesos_directos div article{
+        border: solid 1px black;
+        width: 100%;
+        margin: 10% 0px;
+    }
+
+    /*SECTION - ARTICULOS PRINCIPALES*/
+
+    #articulos_principales{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and ( max-width: 767px){
+
+    /*SECTION - ACCESOS DIRECTOS*/
+
+    #accesos_directos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #accesos_directos div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #accesos_directos div article{
+        border: solid 1px black;
+        width: 48%;
+        margin: 5% 0%;
+
+    }
+
+    /*SECTION - ARTICULOS PRINCIPALES*/
+
+    #articulos_principales article>div{
+        border: none;
+    }
+
+    #articulos_principales img{
+        border: none;
+        margin: 1%;
+    }
+
+    #articulos_principales article{
+        border: solid 2px black;
+        box-shadow: 5px 5px 3px 4px rgba(145, 145, 145, 1);
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-color: #004706;
+        color: #CFCB5D;
+    }
+
+    footer>div {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+    }
+
+    #direccion {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    footer p {
+        margin: auto 0px;
+    }
+
+    footer a {
+        color: #CFCB5D;
+        margin: auto 0px;
+        width: 90px;
+    }
+
+    footer div div:last-child {
+        width: 30%;
+        display: flex;
+    }
+
+    .redes_sociales {
+        width: 100%;
+    }
+    
+}
+    
+@media screen and (min-width: 768px){
+
+    /* HEADER */
+    
+    #logo{
+        position: relative;
+        left: 45%;
+        top: 3vh;
+    }
+
+    #btn-menu, .menu, header label{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        background: #00700A;
+        color: #FFF;
+        height: 50px;
+        border-radius: 0px;
+    }
+
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+
+    #menu ul {
+        width: 100%;
+    }
+
+    #menu li {
+        float: left;
+        display: inline;
+        position: relative;
+        width: 20%;
+        text-align: center;
+    }
+
+    #menu a {
+        display: block;
+        line-height: 50px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    #menu a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+    }
+
+    #menu li a:hover {
+        color: #00700A;
+        background: #C7C7C7;
+    }
+
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+        background: #00990E;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+
+    #menu ul.sub-menus li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu ul.sub-menus a {
+        color: #FFFFFF;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+
+    #menu ul.sub-menus a:hover{
+        background: #004706;
+        color: #CFCB5D;
+    }
+
+    /*SECTION - ACCESOS DIRECTOS*/
+
+    #accesos_directos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #accesos_directos div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 49%;
+    }
+
+    #accesos_directos div article{
+        border: solid 1px black;
+        margin: 5% 0%;
+        width: 48%;
+
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-color: #004706;
+        color: #CFCB5D;
+    }
+
+    footer>div {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+    }
+
+    #direccion {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+    #telefono{
+        width: 33%; 
+    }
+
+    footer p {
+        margin: auto 0px;
+    }
+
+    footer a {
+        color: #CFCB5D;
+        margin: auto 0px;
+        width: 90px;
+    }
+
+    footer div div:last-child {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .redes_sociales {
+        width: 100%;
+    }
+}
+
+
+
+            /* CONSTRUCCION */
+
+    img.construccion{
+        width: 5%;
+        position: absolute;
+        left: 50%;
+        top:1%;
+    }
+
+    p.construccion{
+        color: red;
+        position: absolute;
+        top: 2%;
+        left: 42%;
+        font-size: 10vh;
+    }
+
+    #img_ejemplo.construccion{
+        position: absolute;
+        top: 18%;
+        left: 38%;
+        width: 30%;
+    }
+
+    a.construccion{
+        color: red;
+        text-decoration: none;
+        font-size: 10vh;
+        position: absolute;
+        left: 30%;
+        top:75%;
+    }
+
+    /*FORMULARIO*/
+
+    .formulario{
+        border: solid 1px black;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(199, 199, 199);
+        margin: 0px auto;
+        border-radius: 25px;
+    }
+
+    .formulario div{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 0px auto;
+    }
+
+    

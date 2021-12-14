@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body{
+    margin: 0px
+}
+
+#curriculum{
+    font-family: 'Courgette', cursive;
+    width: 50%;
+    height: 100vh;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.columna_derecha{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.columna_izquierda{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 65%;
+    background-color: rgb(240, 240, 240);
+}
+#foto_personal{
+    width: 100%;
+}
+
+#nombre{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: white;
+    margin: 0%;
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+}
+
+#info_personal{
+    background-color: rgb(255, 162, 58);
+    height: 100%;
+    position: relative;
+}
+
+.formato_cajas{
+    margin: 2.5% 5%;
+    background-color: white;
+    box-shadow: 0px 0px 25px -5px #000000;
+    border-radius: 15px;
+}
+
+#formacion{
+    margin-top: 5%;
+    height: 35%;
+}
+
+#GyA{
+    height: 25%;
+}
+
+#redes_sociales{
+    height: 25%;
+}
+
+footer{
+    margin: 5%;
+    margin-top: 2.5%;
+    background-color: white;
+    box-shadow: 0px 0px 25px -5px #000000;
+    border-radius: 15px;
+    font-size: 14px;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>h3, footer>p{
+    margin: 2.5%;
+}
+
+p{
+    margin: 0% 5%;
+}
+
+.final{
+    display:flex;
+    justify-content: flex-end;
+}
+
+h2{
+    margin-left:5%;
+    color: rgb(255, 162, 58);
+    text-shadow: 3px 3px 5px rgba(255,162,110,0.5);
+}
+
+.elementos{
+    max-width: 15%;
+}
+
+.iconos{
+    position: relative;
+    max-width: 90%;
+    margin: 0% auto;
+    padding: 5% 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap
+}
+
+.insta{
+    position:absolute;
+    left: 0%;
+}
+
+.facebook{
+    position:absolute;
+    left: 28%
+}
+
+.tiktok{
+    position:absolute;
+    left: 56%;
+}
+
+.twitter{
+    position:absolute;
+    left: 85%;
+}
+
+.color:hover{
+    opacity: 0%;
+}
+
+.experiencias{
+    max-width: 90%;
+    margin: 6% auto;
+}
+
+blockquote{
+    font-family: 'Cormorant Garamond';
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
+
+span{
+    display: block;
+    max-width: 100%;
+    margin: 10% 5%;
+    position:relative;
+}
+
+span>img{
+    width: 10%;
+}
+
+cite{
+    position: absolute;
+    left: 22%;
+    top: 5%;
+}
+
+#gmail{
+    position: absolute;
+    left: 22%;
+    top: 16%;
+}
+
+#telefono{
+    position: absolute;
+    left: 22%;
+    top: 26%;
+}
+
+img~p{
+    color:white;
+    display: inline-block;
+    position: absolute;
+    top:25%;
+    left:15%;
+}
+
+span~section{
+    margin-left: 20%;
+}
+
+section>img{
+    margin: 5% 0%;
+}
